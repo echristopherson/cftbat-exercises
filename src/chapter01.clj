@@ -32,7 +32,8 @@
    (defn dec-maker
      "Return a function `f`, taking `num`, such that `(f num)` evaluates to `(- num subtrahend)`"
      [subtrahend]
-     (fn [num] (- num subtrahend))))
+     (fn [num] (- num subtrahend)))
+   dec-maker)
   ([subtrahend]
    (exercise03)
    (dec-maker subtrahend)))
