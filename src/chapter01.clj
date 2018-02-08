@@ -1,3 +1,6 @@
+(ns cftbat-exercises.chapter01 "Exercises for Chapter 1"
+    (:gen-class))
+
 ;;; 1. Use the str, vector, list, hash-map, and hash-set functions.
 (defn ex01
   "Use the str, vector, list, hash-map, and hash-set functions."
