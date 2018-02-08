@@ -10,7 +10,7 @@
     (println "my-string:" my-string)
     (println "3rd element of my-vector:" (nth my-vector 3))
     (println "value for key :b in my-hash-map:" (:b my-hash-map))
-    (println my-hash-set contains 42? (contains? my-hash-set 42))))
+    (println "my-hash-set contains 42?" (contains? my-hash-set 42))))
 
 ;;; 2. Write a function that takes a number and adds 100 to it.
 
