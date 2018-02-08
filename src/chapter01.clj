@@ -1,6 +1,6 @@
 ;;; 1. Use the str, vector, list, hash-map, and hash-set functions.
 (defn ex01
-  "Exercise 1"
+  "Use the str, vector, list, hash-map, and hash-set functions."
   []
   (let [my-string (str "This is " "my string")
         my-vector (vector 1 :two "three" 4.0)
