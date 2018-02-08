@@ -16,6 +16,10 @@
     (println "my-hash-set contains 42?" (contains? my-hash-set 42))))
 
 ;;; 2. Write a function that takes a number and adds 100 to it.
+(defn exercise02
+  "Write a function that takes a number and adds 100 to it."
+  [num]
+  (+ num 100))
 
 ;;; 3. Write a function, dec-maker, that works exactly like the function inc-maker except with subtraction:
 
