@@ -22,9 +22,20 @@
   (+ num 100))
 
 ;;; 3. Write a function, dec-maker, that works exactly like the function inc-maker except with subtraction:
-
 ;;;    (def dec9 (dec-maker 9)) (dec9 10)
 ;;;    ; => 1
+(defn exercise03
+  "Write a function, dec-maker, that works exactly like the function inc-maker except with subtraction:
+    (def dec9 (dec-maker 9)) (dec9 10)
+    ; => 1"
+  ([]
+   (defn dec-maker
+     "Return a function f, taking num, such that (f num) evaluates to num - subtrahend."
+     [subtrahend]
+     (fn [num] (- num subtrahend))))
+  ([subtrahend]
+   (exercise03)
+   (dec-maker subtrahend)))
 
 ;;; 4. Write a function, mapset, that works like map except the return value is a set:
 ;;;    (mapset inc [1 1 2 2])
