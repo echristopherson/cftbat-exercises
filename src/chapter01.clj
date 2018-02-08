@@ -3,7 +3,7 @@
 
 ;;; 1. Use the str, vector, list, hash-map, and hash-set functions.
 (defn exercise01
-  "Use the str, vector, list, hash-map, and hash-set functions."
+  "Simply demonstrates the `str`, `vector`, `list`, `hash-map`, and `hash-set` functions."
   []
   (let [my-string (str "This is " "my string")
         my-vector (vector 1 :two "three" 4.0)
@@ -17,7 +17,7 @@
 
 ;;; 2. Write a function that takes a number and adds 100 to it.
 (defn exercise02
-  "Write a function that takes a number and adds 100 to it."
+  "Takes a number `num` and adds 100 to it."
   [num]
   (+ num 100))
 
@@ -25,9 +25,13 @@
 ;;;    (def dec9 (dec-maker 9)) (dec9 10)
 ;;;    ; => 1
 (defn exercise03
-  "Write a function, dec-maker, that works exactly like the function inc-maker except with subtraction:
-    (def dec9 (dec-maker 9)) (dec9 10)
-    ; => 1"
+  "Defines a function, `dec-maker`, that works exactly like the function inc-maker in the book, except with subtraction; i.e. it takes an argument `num`, such that `(f num)` evaluates to `(- num subtrahend)`:
+
+       (def dec9 (dec-maker 9))
+       (dec9 10)
+       ; => 1
+
+  If called with no arguments, simply (re)defines `dec-maker`, and returns it. If called with the argument `subtrahend`, (re)defines `dec-maker` and returns the result of calling `(dec-maker subtrahend)`, i.e. a decrementer function that will remove `subtrahend` from its argument and return that."
   ([]
    (defn dec-maker
      "Return a function `f`, taking `num`, such that `(f num)` evaluates to `(- num subtrahend)`"
