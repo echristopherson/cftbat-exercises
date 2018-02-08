@@ -2,7 +2,7 @@
     (:gen-class))
 
 ;;; 1. Use the str, vector, list, hash-map, and hash-set functions.
-(defn ex01
+(defn exercise01
   "Use the str, vector, list, hash-map, and hash-set functions."
   []
   (let [my-string (str "This is " "my string")
