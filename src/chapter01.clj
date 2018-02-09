@@ -45,6 +45,22 @@
 ;;; 4. Write a function, mapset, that works like map except the return value is a set:
 ;;;    (mapset inc [1 1 2 2])
 ;;;    ; => #{2 3}
+(defn exercise04
+  "Defines a function, `mapset`, that works like map except the return value is a set:
+
+       (mapset inc [1 1 2 2])
+       ; => #{2 3}
+
+  If called with no arguments, simply (re)defines `mapset`, and returns it. If called with an argument list `& args`, (re)defines `mapset` and returns the result of calling `(apply mapset args)`."
+  ([]
+   (defn mapset
+     "Acts like `map`, except that it returns a set made from what would be the seq returned by the equivalent `map`."
+     [& args]
+     (set (apply map args)))
+   mapset)
+  ([& args]
+   (exercise04)
+   (apply mapset args)))
 
 ;;; 5. Create a function that’s similar to symmetrize-body-parts except that it has to work with weird space aliens with radial symmetry. Instead of two eyes, arms, legs, and so on, they have  ve.
 
