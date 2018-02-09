@@ -63,6 +63,21 @@
    (apply mapset args)))
 
 ;;; 5. Create a function that’s similar to symmetrize-body-parts except that it has to work with weird space aliens with radial symmetry. Instead of two eyes, arms, legs, and so on, they have five.
+(defn exercise05
+  "Defines a function, `symmetrize-body-parts-5`, that works like `symmetrize-body-parts` in the book, except that instead of just pairs of matching body parts, they have sets of five.
+
+  If called with no arguments, simply (re)defines `symmetrize-body-parts-5`, and returns it. If called with an argument list `& args`, (re)defines `symmetrize-body-parts-5` and returns the result of calling `(apply symmetrize-body-parts-5 args)`."
+([])
+([& args]
+))
 
 ;;; 6. Create a function that generalizes symmetrize-body-parts and the func- tion you created in Exercise 5. The new function should take a col- lection of body parts and the number of matching body parts to add.
 ;;;    If you’re completely new to Lisp languages and functional program- ming, it probably won’t be obvious how to do this. If you get stuck, just move on to the next chapter and revisit the problem later.
+(defn exercise06
+  "Defines a function, `symmetrize-body-parts-n`, that works like `symmetrize-body-parts` and `symmetrize-body-parts-5`, except that instead of sets of two or five matching body parts, the creature has sets of an arbitrary number of parts.
+
+  If called with no arguments, simply (re)defines `symmetrize-body-parts-radial`, and returns it. If called with an argument list `& args`, (re)defines `symmetrize-body-parts-radial` and returns the result of calling `(apply symmetrize-body-parts-5 args)`.
+"
+([])
+([& args]
+))
