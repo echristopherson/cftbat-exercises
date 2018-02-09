@@ -71,8 +71,8 @@
 ([& args]
 ))
 
-;;; 6. Create a function that generalizes symmetrize-body-parts and the func- tion you created in Exercise 5. The new function should take a col- lection of body parts and the number of matching body parts to add.
-;;;    If you’re completely new to Lisp languages and functional program- ming, it probably won’t be obvious how to do this. If you get stuck, just move on to the next chapter and revisit the problem later.
+;;; 6. Create a function that generalizes symmetrize-body-parts and the function you created in Exercise 5. The new function should take a collection of body parts and the number of matching body parts to add.
+;;;    If you’re completely new to Lisp languages and functional programming, it probably won’t be obvious how to do this. If you get stuck, just move on to the next chapter and revisit the problem later.
 (defn exercise06
   "Defines a function, `symmetrize-body-parts-n`, that works like `symmetrize-body-parts` and `symmetrize-body-parts-5`, except that instead of sets of two or five matching body parts, the creature has sets of an arbitrary number of parts.
 
