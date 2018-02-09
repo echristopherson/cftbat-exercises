@@ -34,7 +34,7 @@
   If called with no arguments, simply (re)defines `dec-maker`, and returns it. If called with the argument `subtrahend`, (re)defines `dec-maker` and returns the result of calling `(dec-maker subtrahend)`, i.e. a decrementer function that will remove `subtrahend` from its argument and return that."
   ([]
    (defn dec-maker
-     "Return a function `f`, taking `num`, such that `(f num)` evaluates to `(- num subtrahend)`"
+     "Returns a function `f`, taking `num`, such that `(f num)` evaluates to `(- num subtrahend)`."
      [subtrahend]
      (fn [num] (- num subtrahend)))
    dec-maker)
