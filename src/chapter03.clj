@@ -1,4 +1,4 @@
-(ns cftbat-exercises.chapter01 "Exercises for Chapter 1"
+(ns cftbat-exercises.chapter03 "Exercises for Chapter 3"
     (:gen-class))
 
 ;;; 1. Use the str, vector, list, hash-map, and hash-set functions.
