@@ -25,7 +25,7 @@
 ;;;    (def dec9 (dec-maker 9)) (dec9 10)
 ;;;    ; => 1
 (defn exercise03
-  "Defines a function, `dec-maker`, that works exactly like the function inc-maker in the book, except with subtraction; i.e. it takes an argument `num`, such that `(f num)` evaluates to `(- num subtrahend)`:
+  "Defines a function, `dec-maker`, that works exactly like the function `inc-maker` in the book, except with subtraction; i.e. it takes an argument `num`, such that `(f num)` evaluates to `(- num subtrahend)`:
 
        (def dec9 (dec-maker 9))
        (dec9 10)
